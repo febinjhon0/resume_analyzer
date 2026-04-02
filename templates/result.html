@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Result</title>
+</head>
+<body>
+    <h2>Analysis Result</h2>
+
+    <p><b>Score:</b> {{ score }}%</p>
+
+    <h3>Skills Found:</h3>
+    <ul>
+        {% for s in skills %}
+        <li>{{ s }}</li>
+        {% endfor %}
+    </ul>
+
+    <h3>Missing Skills:</h3>
+    <ul>
+        {% for m in missing %}
+        <li>{{ m }}</li>
+        {% endfor %}
+    </ul>
+    <a href="/">Go Back</a>
+</body>
+</html>
